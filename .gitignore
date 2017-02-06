@@ -3,3 +3,6 @@ node_modules
 
 # vs code stuff
 .vscode
+
+# build output
+public/built/
