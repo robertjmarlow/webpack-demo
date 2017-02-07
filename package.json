@@ -13,6 +13,10 @@
   ],
   "author": "Rob Marlow",
   "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "script-loader": "^0.7.0"
+  },
   "devDependencies": {
     "babel": "^6.5.2",
     "babel-core": "^6.22.1",

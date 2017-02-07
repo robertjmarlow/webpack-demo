@@ -5,3 +5,7 @@ body {
 .pug {
   content: url(../../img/cute-pug-vector-72390.jpg);
 }
+
+.some-content {
+  background-color: #FEFEFE;
+}
