@@ -7,7 +7,8 @@ module.exports = {
 
   output: {
     filename: 'bundle.js',
-    path: './public/built'
+    publicPath: 'http://localhost:8080/built/',
+    path: __dirname + '/public/built'
   },
 
   devtool: 'source-map',
@@ -23,4 +24,8 @@ module.exports = {
       { test: /\.(jpe?g|png|gif|svg)$/i, loader: "file-loader?name=built/img/[name].[ext]" }
     ]
   },
+
+  plugins: [
+    new webpack.HotModuleReplacementPlugin()
+  ]
 }
