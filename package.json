@@ -14,8 +14,7 @@
   "author": "Rob Marlow",
   "license": "ISC",
   "dependencies": {
-    "jquery": "^3.1.1",
-    "script-loader": "^0.7.0"
+    "jquery": "^3.1.1"
   },
   "devDependencies": {
     "babel": "^6.5.2",
@@ -26,6 +25,7 @@
     "css-loader": "^0.26.1",
     "file-loader": "^0.10.0",
     "image-webpack-loader": "^3.2.0",
+    "script-loader": "^0.7.0",
     "style-loader": "^0.13.1",
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.3.0"
