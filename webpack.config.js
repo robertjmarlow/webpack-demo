@@ -1,26 +1,24 @@
-var webpack = require('webpack');
-
 module.exports = {
   entry: [
-    './src/js/main.js'
+    './src/js/main.js',
   ],
 
   output: {
     filename: 'bundle.js',
-    path: './public/built'
+    path: './public/built',
   },
 
   devtool: 'source-map',
 
   resolve: {
-    extensions: ['.js']
+    extensions: ['.js'],
   },
 
   module: {
     loaders: [
       { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ },
       { test: /\.css$/, loader: 'style-loader!css-loader' },
-      { test: /\.(jpe?g|png|gif|svg)$/i, loader: "file-loader?name=built/img/[name].[ext]" }
-    ]
+      { test: /\.(jpe?g|png|gif|svg)$/i, loader: 'file-loader?name=built/img/[name].[ext]' },
+    ],
   },
-}
+};
